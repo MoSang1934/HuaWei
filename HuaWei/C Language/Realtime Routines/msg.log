@@ -1,0 +1,12 @@
+cp -f /usr/local/usralgo/usralgomain.c /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1
+make -C /opt/armv71-4.1.18-ipipe/usr/src/ipipe-ipipe-core-4.1.18-arm-9 SUBDIRS=/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1 modules
+make[1]: Entering directory `/opt/armv71-4.1.18-ipipe/usr/src/ipipe-ipipe-core-4.1.18-arm-9'
+  CC [M]  /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgomain.o
+  CC [M]  /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usrcode.o
+  LD [M]  /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.mod.o
+  LD [M]  /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko
+make[1]: Leaving directory `/opt/armv71-4.1.18-ipipe/usr/src/ipipe-ipipe-core-4.1.18-arm-9'
+mv -f usralgo.ko ../../bin/Debug/

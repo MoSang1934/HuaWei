@@ -1,0 +1,3 @@
+SUBPROGMySampleFunction	SUBPROG	MySampleFunction	100000
+SUBPROGTimer	SUBPROG	Timer	100001
+PLCMyplc1	PLC	Myplc1	1

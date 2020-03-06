@@ -1,0 +1,22 @@
+In file included from /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgomain.c:41:0:
+/usr/local/dtlibs/rtpmac/RtGpShm.h:3475:7: warning: "__i386__" is not defined [-Wundef]
+ #elif __i386__
+       ^
+In file included from /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usrcode.h:9:0,
+                 from /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usrcode.c:2:
+/usr/local/dtlibs/rtpmac/RtGpShm.h:3475:7: warning: "__i386__" is not defined [-Wundef]
+ #elif __i386__
+       ^
+/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usrcode.c: In function 'CfromScript':
+/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usrcode.c:54:6: warning: unused variable 'icfrom_type' [-Wunused-variable]
+  int icfrom_type = (int)cfrom_type;
+      ^
+WARNING: "GetDVarPtr" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
+WARNING: "GetRVarPtr" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
+WARNING: "im_read" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
+WARNING: "GetCVarPtr" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
+WARNING: "GetLVarPtr" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
+WARNING: "GetSharedMemPtr" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
+WARNING: "im_write" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
+WARNING: "GetUserBufferPtr" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
+WARNING: "GetIOMemPtr" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei6/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!
