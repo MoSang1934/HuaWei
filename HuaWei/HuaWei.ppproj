@@ -322,9 +322,6 @@
     </None>
     <Folder Include="PMAC Script Language\Kinematic Routines" />
     <Folder Include="PMAC Script Language\Libraries" />
-    <None Include="PMAC Script Language\Libraries\subprog1.pmc">
-      <DisplayOrder>0</DisplayOrder>
-    </None>
     <None Include="PMAC Script Language\Libraries\timer.pmc">
       <DisplayOrder>1</DisplayOrder>
     </None>
