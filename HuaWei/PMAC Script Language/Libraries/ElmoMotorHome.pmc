@@ -101,9 +101,13 @@ if(ECAT[0].Enable==1)
 			{
 			HomeStatus(index)=8;
 			}
-			else
+			else if(Motor[index].HomeComplete!=1)
 			{
 			HomeStatus(index)=7;
+			}
+			else
+			{
+			HomeStatus(index)=8;
 			}
 		break;
 		case 8:

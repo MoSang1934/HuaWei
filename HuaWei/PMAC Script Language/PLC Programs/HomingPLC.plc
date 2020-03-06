@@ -70,23 +70,31 @@ while(1)
 	}
 	if(HomeMotor(16)==1)
 	{
-	//call LocalMotorHome(16,HomeVel(16),HomePolarity(16))
+	HomeMotor(16)=0
+	hmz 16
+	//call LocalMotorHome(16,HomeVel(16),HomePolarity(16)) //Õº½ºÅÌ
 	}
 	if(HomeMotor(17)==1)
 	{
-	//call LocalMotorHome(17,HomeVel(17),HomePolarity(17))
+	call JiaZhuaHome(17,HomeVel(17),HomePolarity(17))//¼Ð×¦µç»ú
 	}
 	if(HomeMotor(18)==1)
 	{
-	//	call LocalMotorHome(18,HomeVel(18),HomePolarity(18))
+	HomeMotor(18)=0
+	hmz 18
+	//	call LocalMotorHome(18,HomeVel(18),HomePolarity(18)) //ÒÆÔØZ
 	}
 	if(HomeMotor(19)==1)
 	{
-	//call LocalMotorHome(19,HomeVel(19),HomePolarity(19))
+	HomeMotor(19)=0
+	hmz 19
+	//call LocalMotorHome(19,HomeVel(19),HomePolarity(19)) //Õº½ºZ
 	}
 	if(HomeMotor(20)==1)
 	{
-	//call LocalMotorHome(20,HomeVel(20),HomePolarity(20))
+	HomeMotor(20)=0
+	hmz 20
+	//call LocalMotorHome(20,HomeVel(20),HomePolarity(20))//ÌùÆ¬Z
 	}
 	if(HomeMotor(21)==1)  
 	{
