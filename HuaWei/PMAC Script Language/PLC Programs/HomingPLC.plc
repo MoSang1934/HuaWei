@@ -103,11 +103,11 @@ while(1)
 
 	if(HomeMotor(22)==1)
 	{
-//	call Home485(22)
+	call XiangJiZHome(22,HomeVel(22),HomePolarity(22))
 	}
 	if(HomeMotor(23)==1)
 	{
-	//call Home485(23)
+	call XiangJiZHome(23,HomeVel(23),HomePolarity(23))
 	}
 
 }

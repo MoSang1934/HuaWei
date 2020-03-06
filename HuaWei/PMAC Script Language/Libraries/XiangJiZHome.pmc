@@ -1,4 +1,4 @@
-open subprog EcatMotorHome(motor_num,homevel,polarity)
+open subprog XiangJiZHome(motor_num,homevel,polarity)
 local index;
 Ldata.motor=motor_num;
 index=motor_num;
@@ -10,8 +10,20 @@ else
 {
 	Motor[index].HomeVel=abs(homevel);
 }
-if(ECAT[0].Enable==1)
+if(motor_num==22)
 {
+YZXJ_Z_RESET=1
+call Timer.sec(1)
+YZXJ_Z_RESET=0
+call Timer.sec(1)
+}
+if(motor_num==23)
+{
+TPXJ_Z_RESET=1
+call Timer.sec(1)
+TPXJ_Z_RESET=0
+call Timer.sec(1)
+}
 	switch(HomeStatus(index))
 	{
 		case 0:
@@ -114,7 +126,6 @@ if(ECAT[0].Enable==1)
 			Call Timer.sec(0.1)
 			HTimer(index)=Sys.Time;
 			HomeStatus(index)=6;
-			//CtrlWord(index)=0
 			Call Timer.sec(0.5)
 
 		break;
@@ -135,12 +146,6 @@ if(ECAT[0].Enable==1)
 			}
 		break;
 		case 7:
-			Call Timer.sec(0.05)
-			CtrlWord(index)=$16//$14=>$16
-			while(CtrlWord(index)!=$16)
-			{
-			CtrlWord(index)=$16
-			}
 			Call Timer.sec(0.5)
 			home
 			HTimer(index)=Sys.Time;
@@ -182,14 +187,8 @@ if(ECAT[0].Enable==1)
 		default:
 		break;
 	}
-
-}
-else
-{
-HomeStatus(index)=255
-}
    return;
-close
+   close
 
 
 
