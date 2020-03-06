@@ -8,7 +8,7 @@
     <RootNamespace>HuaWei</RootNamespace>
     <AssemblyName>Power Pmac Project Template</AssemblyName>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <IPAddress>192.168.0.200</IPAddress>
+    <IPAddress>no device</IPAddress>
     <TelnetPassword>deltatau</TelnetPassword>
     <TelnetPort>22</TelnetPort>
     <TelnetUser>root</TelnetUser>
@@ -38,7 +38,7 @@
     <DownloadSystemSetupConfig>Yes</DownloadSystemSetupConfig>
     <UseNewNamingFormat>Yes</UseNewNamingFormat>
     <Name>HuaWei</Name>
-    <PPCPUType>armv71-4.1.18;4.1.18-ipipe</PPCPUType>
+    <PPCPUType>ppc405</PPCPUType>
     <ProjectFrimwareVers>2.5.2.0</ProjectFrimwareVers>
     <CPUType>arm,LS1021A</CPUType>
   </PropertyGroup>
@@ -107,6 +107,10 @@
       <SubType>Content</SubType>
       <DisplayOrder>0</DisplayOrder>
     </Content>
+    <Content Include="PMAC Script Language\Libraries\DSMotorHome.pmc">
+      <SubType>Content</SubType>
+      <DisplayOrder>4</DisplayOrder>
+    </Content>
     <Content Include="PMAC Script Language\Libraries\EcatMotorHome.pmc">
       <SubType>Content</SubType>
       <DisplayOrder>2</DisplayOrder>
@@ -115,7 +119,7 @@
       <SubType>Content</SubType>
       <DisplayOrder>3</DisplayOrder>
     </Content>
-    <Content Include="PMAC Script Language\PLC Programs\plc1.plc">
+    <Content Include="PMAC Script Language\PLC Programs\HomingPLC.plc">
       <SubType>Content</SubType>
       <DisplayOrder>1</DisplayOrder>
     </Content>

@@ -90,8 +90,7 @@ while(1)
 	}
 	if(HomeMotor(21)==1)  
 	{
-	//call DSMotorHome(20,HomeVel(20),HomePolarity(20))
-	
+	call DSMotorHome(20,HomeVel(20),HomePolarity(20))
 	}
 
 	if(HomeMotor(22)==1)
