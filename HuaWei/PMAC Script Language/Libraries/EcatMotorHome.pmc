@@ -178,6 +178,7 @@ if(ECAT[0].Enable==1)
 			HomeMotor(index)=0
 		break;
 		case 255:
+		HomeMotor(index)=0
 		break;
 		default:
 		break;
@@ -187,6 +188,7 @@ if(ECAT[0].Enable==1)
 else
 {
 HomeStatus(index)=255
+HomeMotor(index)=0
 }
    return;
 close

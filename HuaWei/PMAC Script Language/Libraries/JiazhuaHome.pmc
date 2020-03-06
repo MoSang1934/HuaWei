@@ -89,6 +89,7 @@ if(Motor[index].AmpFault==1)
 			HomeMotor(index)=0
 		break;
 		case 255:
+		HomeMotor(index)=0
 		break;
 		default:
 		break;

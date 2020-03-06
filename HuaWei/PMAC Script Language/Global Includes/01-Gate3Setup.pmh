@@ -88,5 +88,6 @@ Gate3[1].Chan[3].TimerMode=3 //ÌùÆ¬Ïà»ú
 
 Gate3[0].Chan[0].CaptCtrl = 2
 Gate3[0].Chan[1].CaptCtrl = 2
+Gate3[1].Chan[1].CaptCtrl= 10
 Gate3[1].Chan[2].CaptCtrl= 2
 Gate3[1].Chan[3].CaptCtrl= 2

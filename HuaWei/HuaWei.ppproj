@@ -8,7 +8,7 @@
     <RootNamespace>HuaWei</RootNamespace>
     <AssemblyName>Power Pmac Project Template</AssemblyName>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <IPAddress>no device</IPAddress>
+    <IPAddress>192.168.0.200</IPAddress>
     <TelnetPassword>deltatau</TelnetPassword>
     <TelnetPort>22</TelnetPort>
     <TelnetUser>root</TelnetUser>
@@ -38,7 +38,7 @@
     <DownloadSystemSetupConfig>Yes</DownloadSystemSetupConfig>
     <UseNewNamingFormat>Yes</UseNewNamingFormat>
     <Name>HuaWei</Name>
-    <PPCPUType>ppc405</PPCPUType>
+    <PPCPUType>armv71-4.1.18;4.1.18-ipipe</PPCPUType>
     <ProjectFrimwareVers>2.5.2.0</ProjectFrimwareVers>
     <CPUType>arm,LS1021A</CPUType>
   </PropertyGroup>
