@@ -2,4 +2,10 @@
 [PMAC_CONFIG]
 [PMAC_PROJECT]
 [PMAC_PROJECT]
+/var/ftp/usrflash/Project/PMAC Script Language/Libraries/DSMotorHome.pmc:8:1: error #31: invalid function in equation: Motor[L3].HomeVel=-asb(L1)
+Error: downloading preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
+[PMAC_PROJECT]
+/var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/HomingPLC.plc:75:1: error #31: invalid data:  hmz 16
+Error: downloading preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
+[PMAC_PROJECT]
 [PMAC_CONFIG]

@@ -71,7 +71,7 @@ while(1)
 	if(HomeMotor(16)==1)
 	{
 	HomeMotor(16)=0
-	hmz 16
+	homez 16
 	//call LocalMotorHome(16,HomeVel(16),HomePolarity(16)) //’∫Ω∫≈Ã
 	}
 	if(HomeMotor(17)==1)
@@ -81,19 +81,19 @@ while(1)
 	if(HomeMotor(18)==1)
 	{
 	HomeMotor(18)=0
-	hmz 18
+	homez 18
 	//	call LocalMotorHome(18,HomeVel(18),HomePolarity(18)) //“∆‘ÿZ
 	}
 	if(HomeMotor(19)==1)
 	{
 	HomeMotor(19)=0
-	hmz 19
+	homez 19
 	//call LocalMotorHome(19,HomeVel(19),HomePolarity(19)) //’∫Ω∫Z
 	}
 	if(HomeMotor(20)==1)
 	{
 	HomeMotor(20)=0
-	hmz 20
+	homez 20
 	//call LocalMotorHome(20,HomeVel(20),HomePolarity(20))//Ã˘∆¨Z
 	}
 	if(HomeMotor(21)==1)  

@@ -23,90 +23,97 @@ enum csglobalQ {_csglobalQ_=-1};
 enum csglobalQarray {_csglobalQarray_=-1};
 
 enum ptrM {_ptrM_=-1
-,ZJP_READY=8265
-,ZJP_ALM=8266
-,ZJP_TIM=8267
-,JZDJ_READY=8268
-,JZDJ_ALM=8269
-,JZDJ_TIM=8270
-,YZ_Z_ALM=8271
-,YZ_Z_READY=8272
-,ZJ_Z_ALM=8273
-,ZJ_Z_READY=8274
-,TP_Z_ALM=8275
-,TP_Z_READY=8276
-,DS_READY=8277
-,DS_ALM=8278
-,DS_INPOS=8279
-,YZXJ_Z_READY=8280
-,YZXJ_Z_INPOS=8281
-,YZXJ_Z_ALM=8282
-,TPXJ_Z_READY=8283
-,TPXJ_Z_INPOS=8284
-,TPXJ_Z_ALM=8285
-,ZJP_FREE=8286
-,ZJP_RESET=8287
-,JZDJ_FREE=8288
-,JZDJ_RESET=8289
-,YZ_Z_STO=8290
-,YZ_Z_CLEAR=8291
-,ZJ_Z_STO=8292
-,ZJ_Z_CLEAR=8293
-,TP_Z_STO=8294
-,TP_Z_CLEAR=8295
-,DS_FREE=8296
-,DS_RESET=8297
-,YZXJ_Z_FREE=8298
-,YZXJ_Z_RESET=8299
-,TPXJ_Z_FREE=8300
-,TPXJ_Z_RESET=8301};
+,ZJP_READY=8402
+,ZJP_ALM=8403
+,ZJP_TIM=8404
+,JZDJ_READY=8405
+,JZDJ_ALM=8406
+,JZDJ_TIM=8407
+,YZ_Z_ALM=8408
+,YZ_Z_READY=8409
+,ZJ_Z_ALM=8410
+,ZJ_Z_READY=8411
+,TP_Z_ALM=8412
+,TP_Z_READY=8413
+,DS_READY=8414
+,DS_ALM=8415
+,DS_INPOS=8416
+,YZXJ_Z_READY=8417
+,YZXJ_Z_INPOS=8418
+,YZXJ_Z_ALM=8419
+,TPXJ_Z_READY=8420
+,TPXJ_Z_INPOS=8421
+,TPXJ_Z_ALM=8422
+,ZJP_FREE=8423
+,ZJP_RESET=8424
+,JZDJ_FREE=8425
+,JZDJ_RESET=8426
+,YZ_Z_ENA=8427
+,YZ_Z_CLEAR=8428
+,ZJ_Z_ENA=8429
+,ZJ_Z_CLEAR=8430
+,TP_Z_ENA=8431
+,TP_Z_CLEAR=8432
+,DS_FREE=8433
+,DS_RESET=8434
+,YZXJ_Z_FREE=8435
+,YZXJ_Z_RESET=8436
+,TPXJ_Z_FREE=8437
+,TPXJ_Z_RESET=8438};
 enum ptrMarray {_ptrMarray_=-1
 ,MotorStatus0=8192
 ,CoordStatus0=8223
 ,MotorDesPos=8244
-,AD=8302};
-#define	Mtr1MaxSpeed	pshm->P[8192]
-#define	Enc1Res	pshm->P[8193]
-#define	Mtr1Gear	pshm->P[8194]
-#define	Mtr2MaxSpeed	pshm->P[8195]
-#define	Enc2Res	pshm->P[8196]
-#define	Mtr2Gear	pshm->P[8197]
-#define	Mtr3MaxSpeed	pshm->P[8198]
-#define	Enc3Res	pshm->P[8199]
-#define	Mtr3Gear	pshm->P[8200]
-#define	Mtr4MaxSpeed	pshm->P[8201]
-#define	Enc4Res	pshm->P[8202]
-#define	Mtr4Gear	pshm->P[8203]
-#define	Mtr5MaxSpeed	pshm->P[8204]
-#define	Enc5Res	pshm->P[8205]
-#define	Mtr5Gear	pshm->P[8206]
-#define	Mtr6MaxSpeed	pshm->P[8207]
-#define	Enc6Res	pshm->P[8208]
-#define	Mtr6Gear	pshm->P[8209]
-#define	Mtr7MaxSpeed	pshm->P[8210]
-#define	Enc7Res	pshm->P[8211]
-#define	Mtr7Gear	pshm->P[8212]
-#define	Mtr8MaxSpeed	pshm->P[8213]
-#define	Enc8Res	pshm->P[8214]
-#define	Mtr8Gear	pshm->P[8215]
-#define	Mtr9MaxSpeed	pshm->P[8216]
-#define	Enc9Res	pshm->P[8217]
-#define	Mtr9Gear	pshm->P[8218]
-#define	Mtr10MaxSpeed	pshm->P[8219]
-#define	Enc10Res	pshm->P[8220]
-#define	Mtr10Gear	pshm->P[8221]
-#define	Mtr11MaxSpeed	pshm->P[8222]
-#define	Enc11Res	pshm->P[8223]
-#define	Mtr11Gear	pshm->P[8224]
-#define	Mtr12MaxSpeed	pshm->P[8225]
-#define	Enc12Res	pshm->P[8226]
-#define	Mtr12Gear	pshm->P[8227]
-#define	Mtr13MaxSpeed	pshm->P[8228]
-#define	Enc13Res	pshm->P[8229]
-#define	Mtr13Gear	pshm->P[8230]
-#define	Mtr14MaxSpeed	pshm->P[8231]
-#define	Enc14Res	pshm->P[8232]
-#define	Mtr14Gear	pshm->P[8233]
+,HomeMotor=8265
+,HomeStatus=8293
+,HomePolarity=8321
+,HTimer=8347
+,CtrlWord=8373
+,Statusword=8389
+,AD=8439};
+#define	HomeVel(i)	pshm->P[(8192+i)%MAX_P]
+#define	Mtr1MaxSpeed	pshm->P[8213]
+#define	Enc1Res	pshm->P[8214]
+#define	Mtr1Gear	pshm->P[8215]
+#define	Mtr2MaxSpeed	pshm->P[8216]
+#define	Enc2Res	pshm->P[8217]
+#define	Mtr2Gear	pshm->P[8218]
+#define	Mtr3MaxSpeed	pshm->P[8219]
+#define	Enc3Res	pshm->P[8220]
+#define	Mtr3Gear	pshm->P[8221]
+#define	Mtr4MaxSpeed	pshm->P[8222]
+#define	Enc4Res	pshm->P[8223]
+#define	Mtr4Gear	pshm->P[8224]
+#define	Mtr5MaxSpeed	pshm->P[8225]
+#define	Enc5Res	pshm->P[8226]
+#define	Mtr5Gear	pshm->P[8227]
+#define	Mtr6MaxSpeed	pshm->P[8228]
+#define	Enc6Res	pshm->P[8229]
+#define	Mtr6Gear	pshm->P[8230]
+#define	Mtr7MaxSpeed	pshm->P[8231]
+#define	Enc7Res	pshm->P[8232]
+#define	Mtr7Gear	pshm->P[8233]
+#define	Mtr8MaxSpeed	pshm->P[8234]
+#define	Enc8Res	pshm->P[8235]
+#define	Mtr8Gear	pshm->P[8236]
+#define	Mtr9MaxSpeed	pshm->P[8237]
+#define	Enc9Res	pshm->P[8238]
+#define	Mtr9Gear	pshm->P[8239]
+#define	Mtr10MaxSpeed	pshm->P[8240]
+#define	Enc10Res	pshm->P[8241]
+#define	Mtr10Gear	pshm->P[8242]
+#define	Mtr11MaxSpeed	pshm->P[8243]
+#define	Enc11Res	pshm->P[8244]
+#define	Mtr11Gear	pshm->P[8245]
+#define	Mtr12MaxSpeed	pshm->P[8246]
+#define	Enc12Res	pshm->P[8247]
+#define	Mtr12Gear	pshm->P[8248]
+#define	Mtr13MaxSpeed	pshm->P[8249]
+#define	Enc13Res	pshm->P[8250]
+#define	Mtr13Gear	pshm->P[8251]
+#define	Mtr14MaxSpeed	pshm->P[8252]
+#define	Enc14Res	pshm->P[8253]
+#define	Mtr14Gear	pshm->P[8254]
 #ifndef _PP_PROJ_HDR_
   void SetEnumGlobalVar(enum globalP var, double data)
   {
@@ -218,94 +225,101 @@ enum ptrMarray {_ptrMarray_=-1
 #else
 #ifdef _EnumMode_
 enum globalP {_globalP_=-1
-,Mtr1MaxSpeed=8192
-,Enc1Res=8193
-,Mtr1Gear=8194
-,Mtr2MaxSpeed=8195
-,Enc2Res=8196
-,Mtr2Gear=8197
-,Mtr3MaxSpeed=8198
-,Enc3Res=8199
-,Mtr3Gear=8200
-,Mtr4MaxSpeed=8201
-,Enc4Res=8202
-,Mtr4Gear=8203
-,Mtr5MaxSpeed=8204
-,Enc5Res=8205
-,Mtr5Gear=8206
-,Mtr6MaxSpeed=8207
-,Enc6Res=8208
-,Mtr6Gear=8209
-,Mtr7MaxSpeed=8210
-,Enc7Res=8211
-,Mtr7Gear=8212
-,Mtr8MaxSpeed=8213
-,Enc8Res=8214
-,Mtr8Gear=8215
-,Mtr9MaxSpeed=8216
-,Enc9Res=8217
-,Mtr9Gear=8218
-,Mtr10MaxSpeed=8219
-,Enc10Res=8220
-,Mtr10Gear=8221
-,Mtr11MaxSpeed=8222
-,Enc11Res=8223
-,Mtr11Gear=8224
-,Mtr12MaxSpeed=8225
-,Enc12Res=8226
-,Mtr12Gear=8227
-,Mtr13MaxSpeed=8228
-,Enc13Res=8229
-,Mtr13Gear=8230
-,Mtr14MaxSpeed=8231
-,Enc14Res=8232
-,Mtr14Gear=8233};
-enum globalParray {_globalParray_=-1};
+,Mtr1MaxSpeed=8213
+,Enc1Res=8214
+,Mtr1Gear=8215
+,Mtr2MaxSpeed=8216
+,Enc2Res=8217
+,Mtr2Gear=8218
+,Mtr3MaxSpeed=8219
+,Enc3Res=8220
+,Mtr3Gear=8221
+,Mtr4MaxSpeed=8222
+,Enc4Res=8223
+,Mtr4Gear=8224
+,Mtr5MaxSpeed=8225
+,Enc5Res=8226
+,Mtr5Gear=8227
+,Mtr6MaxSpeed=8228
+,Enc6Res=8229
+,Mtr6Gear=8230
+,Mtr7MaxSpeed=8231
+,Enc7Res=8232
+,Mtr7Gear=8233
+,Mtr8MaxSpeed=8234
+,Enc8Res=8235
+,Mtr8Gear=8236
+,Mtr9MaxSpeed=8237
+,Enc9Res=8238
+,Mtr9Gear=8239
+,Mtr10MaxSpeed=8240
+,Enc10Res=8241
+,Mtr10Gear=8242
+,Mtr11MaxSpeed=8243
+,Enc11Res=8244
+,Mtr11Gear=8245
+,Mtr12MaxSpeed=8246
+,Enc12Res=8247
+,Mtr12Gear=8248
+,Mtr13MaxSpeed=8249
+,Enc13Res=8250
+,Mtr13Gear=8251
+,Mtr14MaxSpeed=8252
+,Enc14Res=8253
+,Mtr14Gear=8254};
+enum globalParray {_globalParray_=-1
+,HomeVel=8192};
 enum csglobalQ {_csglobalQ_=-1};
 enum csglobalQarray {_csglobalQarray_=-1};
 enum ptrM {_ptrM_=-1
-,ZJP_READY=8265
-,ZJP_ALM=8266
-,ZJP_TIM=8267
-,JZDJ_READY=8268
-,JZDJ_ALM=8269
-,JZDJ_TIM=8270
-,YZ_Z_ALM=8271
-,YZ_Z_READY=8272
-,ZJ_Z_ALM=8273
-,ZJ_Z_READY=8274
-,TP_Z_ALM=8275
-,TP_Z_READY=8276
-,DS_READY=8277
-,DS_ALM=8278
-,DS_INPOS=8279
-,YZXJ_Z_READY=8280
-,YZXJ_Z_INPOS=8281
-,YZXJ_Z_ALM=8282
-,TPXJ_Z_READY=8283
-,TPXJ_Z_INPOS=8284
-,TPXJ_Z_ALM=8285
-,ZJP_FREE=8286
-,ZJP_RESET=8287
-,JZDJ_FREE=8288
-,JZDJ_RESET=8289
-,YZ_Z_STO=8290
-,YZ_Z_CLEAR=8291
-,ZJ_Z_STO=8292
-,ZJ_Z_CLEAR=8293
-,TP_Z_STO=8294
-,TP_Z_CLEAR=8295
-,DS_FREE=8296
-,DS_RESET=8297
-,YZXJ_Z_FREE=8298
-,YZXJ_Z_RESET=8299
-,TPXJ_Z_FREE=8300
-,TPXJ_Z_RESET=8301};
+,ZJP_READY=8402
+,ZJP_ALM=8403
+,ZJP_TIM=8404
+,JZDJ_READY=8405
+,JZDJ_ALM=8406
+,JZDJ_TIM=8407
+,YZ_Z_ALM=8408
+,YZ_Z_READY=8409
+,ZJ_Z_ALM=8410
+,ZJ_Z_READY=8411
+,TP_Z_ALM=8412
+,TP_Z_READY=8413
+,DS_READY=8414
+,DS_ALM=8415
+,DS_INPOS=8416
+,YZXJ_Z_READY=8417
+,YZXJ_Z_INPOS=8418
+,YZXJ_Z_ALM=8419
+,TPXJ_Z_READY=8420
+,TPXJ_Z_INPOS=8421
+,TPXJ_Z_ALM=8422
+,ZJP_FREE=8423
+,ZJP_RESET=8424
+,JZDJ_FREE=8425
+,JZDJ_RESET=8426
+,YZ_Z_ENA=8427
+,YZ_Z_CLEAR=8428
+,ZJ_Z_ENA=8429
+,ZJ_Z_CLEAR=8430
+,TP_Z_ENA=8431
+,TP_Z_CLEAR=8432
+,DS_FREE=8433
+,DS_RESET=8434
+,YZXJ_Z_FREE=8435
+,YZXJ_Z_RESET=8436
+,TPXJ_Z_FREE=8437
+,TPXJ_Z_RESET=8438};
 enum ptrMarray {_ptrMarray_=-1
 ,MotorStatus0=8192
 ,CoordStatus0=8223
 ,MotorDesPos=8244
-,AD=8302};
+,HomeMotor=8265
+,HomeStatus=8293
+,HomePolarity=8321
+,HTimer=8347
+,CtrlWord=8373
+,Statusword=8389
+,AD=8439};
 #ifndef _PP_PROJ_HDR_
   void SetEnumGlobalVar(enum globalP var, double data)
   {
@@ -419,86 +433,93 @@ enum ptrMarray {_ptrMarray_=-1
 #define MotorStatus0 8192
 #define CoordStatus0 8223
 #define MotorDesPos 8244
-#define Mtr1MaxSpeed 8192
-#define Enc1Res 8193
-#define Mtr1Gear 8194
-#define Mtr2MaxSpeed 8195
-#define Enc2Res 8196
-#define Mtr2Gear 8197
-#define Mtr3MaxSpeed 8198
-#define Enc3Res 8199
-#define Mtr3Gear 8200
-#define Mtr4MaxSpeed 8201
-#define Enc4Res 8202
-#define Mtr4Gear 8203
-#define Mtr5MaxSpeed 8204
-#define Enc5Res 8205
-#define Mtr5Gear 8206
-#define Mtr6MaxSpeed 8207
-#define Enc6Res 8208
-#define Mtr6Gear 8209
-#define Mtr7MaxSpeed 8210
-#define Enc7Res 8211
-#define Mtr7Gear 8212
-#define Mtr8MaxSpeed 8213
-#define Enc8Res 8214
-#define Mtr8Gear 8215
-#define Mtr9MaxSpeed 8216
-#define Enc9Res 8217
-#define Mtr9Gear 8218
-#define Mtr10MaxSpeed 8219
-#define Enc10Res 8220
-#define Mtr10Gear 8221
-#define Mtr11MaxSpeed 8222
-#define Enc11Res 8223
-#define Mtr11Gear 8224
-#define Mtr12MaxSpeed 8225
-#define Enc12Res 8226
-#define Mtr12Gear 8227
-#define Mtr13MaxSpeed 8228
-#define Enc13Res 8229
-#define Mtr13Gear 8230
-#define Mtr14MaxSpeed 8231
-#define Enc14Res 8232
-#define Mtr14Gear 8233
-#define ZJP_READY 8265
-#define ZJP_ALM 8266
-#define ZJP_TIM 8267
-#define JZDJ_READY 8268
-#define JZDJ_ALM 8269
-#define JZDJ_TIM 8270
-#define YZ_Z_ALM 8271
-#define YZ_Z_READY 8272
-#define ZJ_Z_ALM 8273
-#define ZJ_Z_READY 8274
-#define TP_Z_ALM 8275
-#define TP_Z_READY 8276
-#define DS_READY 8277
-#define DS_ALM 8278
-#define DS_INPOS 8279
-#define YZXJ_Z_READY 8280
-#define YZXJ_Z_INPOS 8281
-#define YZXJ_Z_ALM 8282
-#define TPXJ_Z_READY 8283
-#define TPXJ_Z_INPOS 8284
-#define TPXJ_Z_ALM 8285
-#define ZJP_FREE 8286
-#define ZJP_RESET 8287
-#define JZDJ_FREE 8288
-#define JZDJ_RESET 8289
-#define YZ_Z_STO 8290
-#define YZ_Z_CLEAR 8291
-#define ZJ_Z_STO 8292
-#define ZJ_Z_CLEAR 8293
-#define TP_Z_STO 8294
-#define TP_Z_CLEAR 8295
-#define DS_FREE 8296
-#define DS_RESET 8297
-#define YZXJ_Z_FREE 8298
-#define YZXJ_Z_RESET 8299
-#define TPXJ_Z_FREE 8300
-#define TPXJ_Z_RESET 8301
-#define AD 8302
+#define HomeMotor 8265
+#define HomeStatus 8293
+#define HomePolarity 8321
+#define HTimer 8347
+#define CtrlWord 8373
+#define Statusword 8389
+#define HomeVel 8192
+#define Mtr1MaxSpeed 8213
+#define Enc1Res 8214
+#define Mtr1Gear 8215
+#define Mtr2MaxSpeed 8216
+#define Enc2Res 8217
+#define Mtr2Gear 8218
+#define Mtr3MaxSpeed 8219
+#define Enc3Res 8220
+#define Mtr3Gear 8221
+#define Mtr4MaxSpeed 8222
+#define Enc4Res 8223
+#define Mtr4Gear 8224
+#define Mtr5MaxSpeed 8225
+#define Enc5Res 8226
+#define Mtr5Gear 8227
+#define Mtr6MaxSpeed 8228
+#define Enc6Res 8229
+#define Mtr6Gear 8230
+#define Mtr7MaxSpeed 8231
+#define Enc7Res 8232
+#define Mtr7Gear 8233
+#define Mtr8MaxSpeed 8234
+#define Enc8Res 8235
+#define Mtr8Gear 8236
+#define Mtr9MaxSpeed 8237
+#define Enc9Res 8238
+#define Mtr9Gear 8239
+#define Mtr10MaxSpeed 8240
+#define Enc10Res 8241
+#define Mtr10Gear 8242
+#define Mtr11MaxSpeed 8243
+#define Enc11Res 8244
+#define Mtr11Gear 8245
+#define Mtr12MaxSpeed 8246
+#define Enc12Res 8247
+#define Mtr12Gear 8248
+#define Mtr13MaxSpeed 8249
+#define Enc13Res 8250
+#define Mtr13Gear 8251
+#define Mtr14MaxSpeed 8252
+#define Enc14Res 8253
+#define Mtr14Gear 8254
+#define ZJP_READY 8402
+#define ZJP_ALM 8403
+#define ZJP_TIM 8404
+#define JZDJ_READY 8405
+#define JZDJ_ALM 8406
+#define JZDJ_TIM 8407
+#define YZ_Z_ALM 8408
+#define YZ_Z_READY 8409
+#define ZJ_Z_ALM 8410
+#define ZJ_Z_READY 8411
+#define TP_Z_ALM 8412
+#define TP_Z_READY 8413
+#define DS_READY 8414
+#define DS_ALM 8415
+#define DS_INPOS 8416
+#define YZXJ_Z_READY 8417
+#define YZXJ_Z_INPOS 8418
+#define YZXJ_Z_ALM 8419
+#define TPXJ_Z_READY 8420
+#define TPXJ_Z_INPOS 8421
+#define TPXJ_Z_ALM 8422
+#define ZJP_FREE 8423
+#define ZJP_RESET 8424
+#define JZDJ_FREE 8425
+#define JZDJ_RESET 8426
+#define YZ_Z_ENA 8427
+#define YZ_Z_CLEAR 8428
+#define ZJ_Z_ENA 8429
+#define ZJ_Z_CLEAR 8430
+#define TP_Z_ENA 8431
+#define TP_Z_CLEAR 8432
+#define DS_FREE 8433
+#define DS_RESET 8434
+#define YZXJ_Z_FREE 8435
+#define YZXJ_Z_RESET 8436
+#define TPXJ_Z_FREE 8437
+#define TPXJ_Z_RESET 8438
+#define AD 8439
 #endif
 #endif
 #endif //_PP_PROJ_H_
