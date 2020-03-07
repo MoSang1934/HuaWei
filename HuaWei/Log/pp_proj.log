@@ -47,6 +47,9 @@ Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Progr
 Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
 444 Project Symbols were created for gpascii -2 communication
 Status: Successful load of preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
+[PMAC_CONFIG]
+Successful: SaveConfiguration using /var/ftp/usrflash/Project/Configuration/pp_save.cfg
+Successful: SaveCustomConfiguration using template /var/ftp/usrflash/Project/Configuration/pp_custom_save.tpl
 [PMAC_PROJECT]
 Start of Project Loading using INI File: "/var/ftp/usrflash/Project/Configuration/pp_proj.ini"
 Success: Loading usralgo.ko
@@ -55,7 +58,7 @@ Success: Loading RT Address of user_pid_ctrl
 Success: Loading RT Address of user_pid_ctrl
 Success: Loading RT Address of CfromScript
 Success: Loading RT Address of CaptCompISR
-LoadRTUserCode() Delta Time (sec) = 4.827454
+LoadRTUserCode() Delta Time (sec) = 5.901626
 Including Project File: /var/ftp/usrflash/Project/Configuration/pp_disable.txt 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/ECATMap.pmh 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/global definitions.pmh 
@@ -78,11 +81,11 @@ Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Pr
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/ECATEnablePLC.plc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/HomingPLC.plc 
 Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
-Status: Pass 1 Create debug file, #defines, *.h & .sym files, Time (sec) = 0.308467
-Status: Pass 2 Verify prog calls, local stack & labels, Time (sec)  = 0.044768
+Status: Pass 1 Create debug file, #defines, *.h & .sym files, Time (sec) = 0.188559
+Status: Pass 2 Verify prog calls, local stack & labels, Time (sec)  = 0.074859
 444 Project Symbols were created for gpascii -2 communication
-Status: Create PPMAC Symbol Table & Run CPP Time (sec) = 0.594564
+Status: Create PPMAC Symbol Table & Run CPP Time (sec) = 0.398824
 Status: Successful load of preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
-Status: Download to PPMAC Command Processor, Time (sec) = 0.117090
-Status: Final pp_proj.h & Run Background C Apps, Time (sec) = 0.480933
-Project Preprocessing & Load Total Time (sec) = 6.373474
+Status: Download to PPMAC Command Processor, Time (sec) = 0.195847
+Status: Final pp_proj.h & Run Background C Apps, Time (sec) = 0.843656
+Project Preprocessing & Load Total Time (sec) = 7.603709

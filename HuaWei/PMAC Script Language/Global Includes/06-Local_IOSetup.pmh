@@ -105,12 +105,12 @@ ptr ZJP_RESET->Gate3[0].GpioData[0].17.1	//Õ³½ºÅÌ-RESET
 ptr JZDJ_FREE->Gate3[0].GpioData[0].20.1	//¼Ð×¦µç»ú-FREE
 ptr JZDJ_RESET->Gate3[0].GpioData[0].21.1	//¼Ð×¦µç»ú-RESET
 	
-ptr YZ_Z_ENA->Gate3[0].GpioData[0].24.1	//ÒÆÔØZÖá-Ena
-ptr YZ_Z_CLEAR->Gate3[0].GpioData[0].25.1	//ÒÆÔØZÖá-CLEAR
-ptr ZJ_Z_ENA->Gate3[0].GpioData[0].28.1	//Õº½ºZÖá-Ena
-ptr ZJ_Z_CLEAR->Gate3[0].GpioData[0].29.1	//Õº½ºZÖá-CLEAR
-ptr TP_Z_ENA->Gate3[1].GpioData[0].16.1	//ÌùÆ¬ZÖá-Ena
-ptr TP_Z_CLEAR->Gate3[1].GpioData[0].17.1	//ÌùÆ¬ZÖá-CLEAR
+ptr YZ_Z_ENA->Gate3[0].GpioData[0].25.1	//ÒÆÔØZÖá-Ena
+ptr YZ_Z_CLEAR->Gate3[0].GpioData[0].26.1	//ÒÆÔØZÖá-CLEAR
+ptr ZJ_Z_ENA->Gate3[0].GpioData[0].29.1	//Õº½ºZÖá-Ena
+ptr ZJ_Z_CLEAR->Gate3[0].GpioData[0].30.1	//Õº½ºZÖá-CLEAR
+ptr TP_Z_ENA->Gate3[1].GpioData[0].17.1	//ÌùÆ¬ZÖá-Ena
+ptr TP_Z_CLEAR->Gate3[1].GpioData[0].18.1	//ÌùÆ¬ZÖá-CLEAR
 	
 ptr DS_FREE->Gate3[1].GpioData[0].20.1	//¶¥Éý-FREE
 ptr DS_RESET->Gate3[1].GpioData[0].21.1	//¶¥Éý-RESET
