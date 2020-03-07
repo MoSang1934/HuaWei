@@ -22,5 +22,9 @@
 22	SUBPROGXiangJiZHome	homevel	1	1
 23	SUBPROGXiangJiZHome	polarity	2	1
 24	SUBPROGXiangJiZHome	index	3	1
-25	PLCECATEnablePLC	index	0	1
-26	PLCECATEnablePLC	result	1	1
+25	SUBPROGZhanJiaoPanHome	motor_num	0	1
+26	SUBPROGZhanJiaoPanHome	homevel	1	1
+27	SUBPROGZhanJiaoPanHome	polarity	2	1
+28	SUBPROGZhanJiaoPanHome	index	3	1
+29	PLCECATEnablePLC	index	0	1
+30	PLCECATEnablePLC	result	1	1

@@ -1,5 +1,5 @@
 //ECAT AnalogInput
-ptr AD(28)->*;
+ptr AD(29)->*;
 AD(0)-> ECAT[0].IO[4195].Data //气源1
 AD(1)-> ECAT[0].IO[4196].Data //气源2
 AD(2)-> ECAT[0].IO[4197].Data //移载压力变送器1
@@ -24,10 +24,11 @@ AD(20)-> ECAT[0].IO[4215].Data //顶升模组3
 AD(21)-> ECAT[0].IO[4216].Data //顶升模组4
 AD(22)-> ECAT[0].IO[4217].Data //顶升模组5
 AD(23)-> ECAT[0].IO[4218].Data //顶升模组6
-AD(24)-> ECAT[0].IO[4219].Data //蘸胶测试板
-AD(25)-> ECAT[0].IO[4220].Data //温度计
+AD(24)-> ECAT[0].IO[4236].Data //挂胶传感器//ECAT[0].IO[4219].Data //蘸胶测试板
+AD(25)->  ECAT[0].IO[4220].Data //温度计
 AD(26)-> ECAT[0].IO[4221].Data //湿度计
 AD(27)-> ECAT[0].IO[4222].Data
+AD(28)->ECAT[0].IO[4236].Data //挂胶传感器
 
 //ECAT output1   Slave_1016_NX_ECC203_1016_7182_1_OutputBit16bits
 M1000 -> ECAT[0].IO[90].Data.0 //三色灯-红

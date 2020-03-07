@@ -349,17 +349,17 @@ EncTable[25].CosBias=0
 EncTable[25].ScaleFactor=1/256   
 
 /********************************RealTiePianZ********************************/
-EncTable[25].type=1                                     
-EncTable[25].pEnc=Gate3[1].Chan[0].ServoCapt.a          
-EncTable[25].pEnc1=Sys.pushm               
-EncTable[25].index1=8                      
-EncTable[25].index2=8                     
-EncTable[25].index3=0                      
-EncTable[25].index4=0                      
-EncTable[25].index5=0                      
-EncTable[25].MaxDelta=0                    
-EncTable[25].SinBias=0                     
-EncTable[25].CosBias=0                     
-EncTable[25].ScaleFactor=1/256   
+EncTable[26].type=1                                     
+EncTable[26].pEnc=Gate3[1].Chan[0].ServoCapt.a          
+EncTable[26].pEnc1=Sys.pushm               
+EncTable[26].index1=8                      
+EncTable[26].index2=8                     
+EncTable[26].index3=0                      
+EncTable[26].index4=0                      
+EncTable[26].index5=0                      
+EncTable[26].MaxDelta=0                    
+EncTable[26].SinBias=0                     
+EncTable[26].CosBias=0                     
+EncTable[26].ScaleFactor=1/256   
 
-EncTable[26].type=0       
+EncTable[27].type=0       

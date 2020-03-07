@@ -24,6 +24,8 @@ ptr CSJZ_EN->Gate3[1].GpioData[0].12.1	//¥´ÀÕº–◊¶-EN
 ptr CSJZ_ALM->Gate3[1].GpioData[0].13.1	//¥´ÀÕº–◊¶-ALM
 ptr CSJZ_ARRIVAL->Gate3[1].GpioData[0].14.1	//¥´ÀÕº–◊¶-ARRIVAL
 */
+ptr EMC->Gate3[0].GpioData[0].8.1
+ptr SEMC->Sys.Udata[2]
 ptr ZJP_READY->Gate3[0].GpioData[0].0.1	//’≥Ω∫≈Ã-READY
 ptr ZJP_ALM->Gate3[0].GpioData[0].1.1	//’≥Ω∫≈Ã-ALM
 ptr ZJP_TIM->Gate3[0].GpioData[0].2.1	//’≥Ω∫≈Ã-TIM
@@ -104,7 +106,9 @@ ptr ZJP_FREE->Gate3[0].GpioData[0].16.1	//’≥Ω∫≈Ã-FREE
 ptr ZJP_RESET->Gate3[0].GpioData[0].17.1	//’≥Ω∫≈Ã-RESET
 ptr JZDJ_FREE->Gate3[0].GpioData[0].20.1	//º–◊¶µÁª˙-FREE
 ptr JZDJ_RESET->Gate3[0].GpioData[0].21.1	//º–◊¶µÁª˙-RESET
-	
+
+ptr	STO_0->Gate3[0].GpioData[0].24.1//STO
+ptr	STO_1->Gate3[0].GpioData[0].28.1//STO
 ptr YZ_Z_ENA->Gate3[0].GpioData[0].25.1	//“∆‘ÿZ÷·-Ena
 ptr YZ_Z_CLEAR->Gate3[0].GpioData[0].26.1	//“∆‘ÿZ÷·-CLEAR
 ptr ZJ_Z_ENA->Gate3[0].GpioData[0].29.1	//’∫Ω∫Z÷·-Ena

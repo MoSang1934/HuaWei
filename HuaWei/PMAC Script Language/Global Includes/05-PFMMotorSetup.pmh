@@ -1,4 +1,14 @@
-
+Motor[16].Stime=3
+Motor[17].Stime=3
+Motor[18].Stime=3
+Motor[19].Stime=3
+Motor[20].Stime=3
+Motor[21].Stime=3
+Motor[22].Stime=3
+Motor[23].Stime=3
+Motor[24].Stime=3
+Motor[25].Stime=3
+Motor[26].Stime=3
 /********************************ZhanJiaoPan********************************/  
 Motor[16].ServoCtrl=1                                      
 Motor[16].Ctrl=Sys.ServoCtrl                  
@@ -10,8 +20,9 @@ Motor[16].AmpFaultBit=1
 Motor[16].pLimits=Gate3[0].Chan[0].Status.a   
 Motor[16].LimitBits=137                         
 Motor[16].pEncStatus=Gate3[0].Chan[0].Status.a
-Motor[16].CaptControl=$14080801               
-Motor[16].pCaptFlag=Gate3[0].Chan[0].Status.a 
+//Motor[16].CaptControl=$14080801               
+Motor[16].pCaptFlag=Gate3[0].Chan[0].Status.a  
+Motor[16].CaptFlagBit=20
 Motor[16].pCaptPos=Gate3[0].Chan[0].HomeCapt.a
 Motor[16].CaptureMode=1
 Motor[16].MaxDac=10486/2     //500KHz
@@ -133,7 +144,8 @@ Motor[20].pEnc=EncTable[20].a
 Motor[20].pEnc2=EncTable[20].a                 
 Motor[20].pDac=Gate3[1].Chan[0].Pfm.a      
 Motor[20].pAmpFault=Gate3[1].GpioData[0].a 
-Motor[20].AmpFaultBit=0                     
+Motor[20].AmpFaultBit=0  
+Motor[20].AmpFaultLevel=1                   
 Motor[20].pLimits=Gate3[1].Chan[0].Status.a   
 Motor[20].LimitBits=137
 Motor[20].pAmpEnable=Gate3[1].GpioData[0].a 

@@ -8,7 +8,7 @@ In file included from /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei/HuaWei/Hu
  #elif __i386__
        ^
 /cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei/HuaWei/HuaWei/CLANGU~1/REALTI~1/usrcode.c: In function 'CfromScript':
-/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei/HuaWei/HuaWei/CLANGU~1/REALTI~1/usrcode.c:54:6: warning: unused variable 'icfrom_type' [-Wunused-variable]
+/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei/HuaWei/HuaWei/CLANGU~1/REALTI~1/usrcode.c:65:6: warning: unused variable 'icfrom_type' [-Wunused-variable]
   int icfrom_type = (int)cfrom_type;
       ^
 WARNING: "GetDVarPtr" [/cygdrive/c/Users/IA204537/Desktop/Tuning/HuaWei/HuaWei/HuaWei/CLANGU~1/REALTI~1/usralgo.ko] undefined!

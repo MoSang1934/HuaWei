@@ -41,15 +41,13 @@ Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/DSMotorHome.pmc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/JiaZhuaHome.pmc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/XiangJiZHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/ZhanJiaoPanHome.pmc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog1.pmc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/ECATEnablePLC.plc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/HomingPLC.plc 
 Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
-444 Project Symbols were created for gpascii -2 communication
+449 Project Symbols were created for gpascii -2 communication
 Status: Successful load of preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
-[PMAC_CONFIG]
-Successful: SaveConfiguration using /var/ftp/usrflash/Project/Configuration/pp_save.cfg
-Successful: SaveCustomConfiguration using template /var/ftp/usrflash/Project/Configuration/pp_custom_save.tpl
 [PMAC_PROJECT]
 Start of Project Loading using INI File: "/var/ftp/usrflash/Project/Configuration/pp_proj.ini"
 Success: Loading usralgo.ko
@@ -58,7 +56,7 @@ Success: Loading RT Address of user_pid_ctrl
 Success: Loading RT Address of user_pid_ctrl
 Success: Loading RT Address of CfromScript
 Success: Loading RT Address of CaptCompISR
-LoadRTUserCode() Delta Time (sec) = 5.901626
+LoadRTUserCode() Delta Time (sec) = 1.327360
 Including Project File: /var/ftp/usrflash/Project/Configuration/pp_disable.txt 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/ECATMap.pmh 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/global definitions.pmh 
@@ -77,15 +75,138 @@ Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/DSMotorHome.pmc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/JiaZhuaHome.pmc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/XiangJiZHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/ZhanJiaoPanHome.pmc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog1.pmc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/ECATEnablePLC.plc 
 Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/HomingPLC.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/AlramResetPLC.plc 
 Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
-Status: Pass 1 Create debug file, #defines, *.h & .sym files, Time (sec) = 0.188559
-Status: Pass 2 Verify prog calls, local stack & labels, Time (sec)  = 0.074859
-444 Project Symbols were created for gpascii -2 communication
-Status: Create PPMAC Symbol Table & Run CPP Time (sec) = 0.398824
+Status: Pass 1 Create debug file, #defines, *.h & .sym files, Time (sec) = 0.081633
+Status: Pass 2 Verify prog calls, local stack & labels, Time (sec)  = 0.017896
+451 Project Symbols were created for gpascii -2 communication
+Status: Create PPMAC Symbol Table & Run CPP Time (sec) = 0.175426
+Error: downloading preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
+Status: Download to PPMAC Command Processor, Time (sec) = 0.008717
+Project Preprocessing & Load Total Time (sec) = 1.611425
+[PMAC_PROJECT]
+Start of Project Loading using INI File: "/var/ftp/usrflash/Project/Configuration/pp_proj.ini"
+Success: Loading usralgo.ko
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of CfromScript
+Success: Loading RT Address of CaptCompISR
+LoadRTUserCode() Delta Time (sec) = 1.297255
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_disable.txt 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/ECATMap.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/global definitions.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/01-Gate3Setup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/02-SystemSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/03-EncSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/04-EcatMotorSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/05-PFMMotorSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/06-Local_IOSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/07-EcatIOSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/08-CoordSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/09-VirtualMotor.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/timer.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/EcatMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/ElmoMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/DSMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/JiaZhuaHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/XiangJiZHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/ZhanJiaoPanHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog1.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/ECATEnablePLC.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/HomingPLC.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/AlramResetPLC.plc 
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
+Status: Pass 1 Create debug file, #defines, *.h & .sym files, Time (sec) = 0.085050
+Status: Pass 2 Verify prog calls, local stack & labels, Time (sec)  = 0.017166
+451 Project Symbols were created for gpascii -2 communication
+Status: Create PPMAC Symbol Table & Run CPP Time (sec) = 0.167726
+&2#3->xx
+Error: downloading preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
+Status: Download to PPMAC Command Processor, Time (sec) = 0.032053
+Project Preprocessing & Load Total Time (sec) = 1.600063
+[PMAC_PROJECT]
+Start of Project Loading using INI File: "/var/ftp/usrflash/Project/Configuration/pp_proj.ini"
+Success: Loading usralgo.ko
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of CfromScript
+Success: Loading RT Address of CaptCompISR
+LoadRTUserCode() Delta Time (sec) = 1.292687
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_disable.txt 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/ECATMap.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/global definitions.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/01-Gate3Setup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/02-SystemSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/03-EncSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/04-EcatMotorSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/05-PFMMotorSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/06-Local_IOSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/07-EcatIOSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/08-CoordSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/09-VirtualMotor.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/timer.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/EcatMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/ElmoMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/DSMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/JiaZhuaHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/XiangJiZHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/ZhanJiaoPanHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog1.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/ECATEnablePLC.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/HomingPLC.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/AlramResetPLC.plc 
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
+Status: Pass 1 Create debug file, #defines, *.h & .sym files, Time (sec) = 0.079469
+Status: Pass 2 Verify prog calls, local stack & labels, Time (sec)  = 0.020940
+451 Project Symbols were created for gpascii -2 communication
+Status: Create PPMAC Symbol Table & Run CPP Time (sec) = 0.168158
+Error: downloading preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
+Status: Download to PPMAC Command Processor, Time (sec) = 0.041907
+Project Preprocessing & Load Total Time (sec) = 1.603623
+[PMAC_PROJECT]
+Start of Project Loading using INI File: "/var/ftp/usrflash/Project/Configuration/pp_proj.ini"
+Success: Loading usralgo.ko
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of user_pid_ctrl
+Success: Loading RT Address of CfromScript
+Success: Loading RT Address of CaptCompISR
+LoadRTUserCode() Delta Time (sec) = 1.311705
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_disable.txt 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/ECATMap.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/global definitions.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/01-Gate3Setup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/02-SystemSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/03-EncSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/04-EcatMotorSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/05-PFMMotorSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/06-Local_IOSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/07-EcatIOSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/08-CoordSetup.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Global Includes/09-VirtualMotor.pmh 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/timer.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/EcatMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/ElmoMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/DSMotorHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/JiaZhuaHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/XiangJiZHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Libraries/ZhanJiaoPanHome.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/Motion Programs/prog1.pmc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/ECATEnablePLC.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/HomingPLC.plc 
+Including Project File: /var/ftp/usrflash/Project/PMAC Script Language/PLC Programs/AlramResetPLC.plc 
+Including Project File: /var/ftp/usrflash/Project/Configuration/pp_startup.txt 
+Status: Pass 1 Create debug file, #defines, *.h & .sym files, Time (sec) = 0.078839
+Status: Pass 2 Verify prog calls, local stack & labels, Time (sec)  = 0.021032
+451 Project Symbols were created for gpascii -2 communication
+Status: Create PPMAC Symbol Table & Run CPP Time (sec) = 0.168511
 Status: Successful load of preprocessed File: "/var/ftp/usrflash/Temp/pp_proj.pma"
-Status: Download to PPMAC Command Processor, Time (sec) = 0.195847
-Status: Final pp_proj.h & Run Background C Apps, Time (sec) = 0.843656
-Project Preprocessing & Load Total Time (sec) = 7.603709
+Status: Download to PPMAC Command Processor, Time (sec) = 0.054241
+Status: Final pp_proj.h & Run Background C Apps, Time (sec) = 0.151629
+Project Preprocessing & Load Total Time (sec) = 1.786161

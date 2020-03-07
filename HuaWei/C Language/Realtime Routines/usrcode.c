@@ -17,6 +17,7 @@ void user_phase(struct MotorData *Mptr)
 double user_pid_ctrl(struct MotorData *Mptr)
 {
 	int *Idata;
+	int STO;
 	Idata= (int*)pushm;
 	YiZaiR_ElmoDrive_1009_607A_0_Targetposition=Idata[1000];
 	YiZaiDD_ElmoDrive_1010_607A_0_Targetposition=Idata[1001];
@@ -25,6 +26,16 @@ double user_pid_ctrl(struct MotorData *Mptr)
 	TiePianR_ElmoDrive_1013_607A_0_Targetposition=Idata[1004];
 	TiePianDD_ElmoDrive_1014_607A_0_Targetposition=Idata[1005];
 	LiuShuiXian_SW3_1015_607A_0_Targetposition=Idata[1006];
+	
+	STO=GetPtrVar(STO_0);
+	if(STO==1)
+	{
+	 SetPtrVar(STO_1,1);
+	}
+	else
+	{
+	 SetPtrVar(STO_1,0);
+	}
 	return 0;
 }
 

@@ -70,9 +70,7 @@ while(1)
 	}
 	if(HomeMotor(16)==1)
 	{
-	HomeMotor(16)=0
-	homez 16
-	//call LocalMotorHome(16,HomeVel(16),HomePolarity(16)) //’∫Ω∫≈Ã
+	call ZhanJiaoPanHome(16,HomeVel(16),HomePolarity(16)) //’∫Ω∫≈Ã
 	}
 	if(HomeMotor(17)==1)
 	{

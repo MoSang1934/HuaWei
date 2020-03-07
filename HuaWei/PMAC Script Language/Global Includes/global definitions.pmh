@@ -256,8 +256,8 @@ HomeVel(23)=20
 HomeVel(24)=20
 HomeVel(25)=20
 
-HomePolarity(1)=0
-HomePolarity(2)=0
+HomePolarity(1)=1
+HomePolarity(2)=1
 HomePolarity(3)=0
 HomePolarity(4)=0
 HomePolarity(5)=1
