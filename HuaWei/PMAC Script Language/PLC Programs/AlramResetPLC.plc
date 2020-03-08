@@ -1,0 +1,61 @@
+Global GlobalAlarmReset
+OPEN PLC AlarmReset
+
+if(M1101== 1|| GlobalAlarmReset == 1)
+{
+	kill 1..23
+	call Timer.sec(1);
+	SEMC=0;
+	ZJP_RESET=1;
+	JZDJ_RESET=1;
+	YZ_Z_CLEAR=1;
+	ZJ_Z_CLEAR=1;
+	TP_Z_CLEAR=1;
+	DS_RESET=1;
+	YZXJ_Z_RESET=1;
+	TPXJ_Z_RESET=1;
+	YiZai_X_CDHD2_1001_6040_0_Controlword=YiZai_X_CDHD2_1001_6040_0_Controlword|$80
+	YiZai_Y_CDHD2_1002_6040_0_Controlword=YiZai_Y_CDHD2_1002_6040_0_Controlword|$80
+	ZhanJiao_X_CDHD2_1003_6040_0_Controlword=ZhanJiao_X_CDHD2_1003_6040_0_Controlword|$80
+	ZhanJiao_Y_CDHD2_1004_6040_0_Controlword=ZhanJiao_Y_CDHD2_1004_6040_0_Controlword|$80
+	TiePian_X_CDHD2_1005_6040_0_Controlword=TiePian_X_CDHD2_1005_6040_0_Controlword|$80
+	TiePian_Y_CDHD2_1006_6040_0_Controlword=TiePian_Y_CDHD2_1006_6040_0_Controlword|$80
+	ZhongZhuanTai_CDHD2_1007_6040_0_Controlword=ZhongZhuanTai_CDHD2_1007_6040_0_Controlword|$80
+	ChuanSongDaiJiaZhua_CDHD2_1008_6040_0_Controlword=ChuanSongDaiJiaZhua_CDHD2_1008_6040_0_Controlword|$80
+	YiZaiR_ElmoDrive_1009_6040_0_Controlword=YiZaiR_ElmoDrive_1009_6040_0_Controlword|$80
+	YiZaiDD_ElmoDrive_1010_6040_0_Controlword=YiZaiDD_ElmoDrive_1010_6040_0_Controlword|$80
+	ZhanJiaoR_ElmoDrive_1011_6040_0_Controlword=ZhanJiaoR_ElmoDrive_1011_6040_0_Controlword|$80
+	ZhanJiaoDD_ElmoDrive_1012_6040_0_Controlword=ZhanJiaoDD_ElmoDrive_1012_6040_0_Controlword|$80
+	TiePianR_ElmoDrive_1013_6040_0_Controlword=TiePianR_ElmoDrive_1013_6040_0_Controlword|$80
+	TiePianDD_ElmoDrive_1014_6040_0_Controlword=TiePianDD_ElmoDrive_1014_6040_0_Controlword|$80
+	LiuShuiXian_SW3_1015_6040_0_Controlword=LiuShuiXian_SW3_1015_6040_0_Controlword|$80
+	call Timer.sec(2)
+	ZJP_RESET=0;
+	JZDJ_RESET=0;
+	YZ_Z_CLEAR=0;
+	ZJ_Z_CLEAR=0;
+	TP_Z_CLEAR=0;
+	DS_RESET=0;
+	YZXJ_Z_RESET=0;
+	TPXJ_Z_RESET=0;
+	YiZai_X_CDHD2_1001_6040_0_Controlword=YiZai_X_CDHD2_1001_6040_0_Controlword & $FF7F
+	YiZai_Y_CDHD2_1002_6040_0_Controlword=YiZai_Y_CDHD2_1002_6040_0_Controlword & $FF7F
+	ZhanJiao_X_CDHD2_1003_6040_0_Controlword=ZhanJiao_X_CDHD2_1003_6040_0_Controlword & $FF7F
+	ZhanJiao_Y_CDHD2_1004_6040_0_Controlword=ZhanJiao_Y_CDHD2_1004_6040_0_Controlword & $FF7F
+	TiePian_X_CDHD2_1005_6040_0_Controlword=TiePian_X_CDHD2_1005_6040_0_Controlword & $FF7F
+	TiePian_Y_CDHD2_1006_6040_0_Controlword=TiePian_Y_CDHD2_1006_6040_0_Controlword & $FF7F
+	ZhongZhuanTai_CDHD2_1007_6040_0_Controlword=ZhongZhuanTai_CDHD2_1007_6040_0_Controlword & $FF7F
+	ChuanSongDaiJiaZhua_CDHD2_1008_6040_0_Controlword=ChuanSongDaiJiaZhua_CDHD2_1008_6040_0_Controlword & $FF7F
+	YiZaiR_ElmoDrive_1009_6040_0_Controlword=YiZaiR_ElmoDrive_1009_6040_0_Controlword & $FF7F
+	YiZaiDD_ElmoDrive_1010_6040_0_Controlword=YiZaiDD_ElmoDrive_1010_6040_0_Controlword & $FF7F
+	ZhanJiaoR_ElmoDrive_1011_6040_0_Controlword=ZhanJiaoR_ElmoDrive_1011_6040_0_Controlword & $FF7F
+	ZhanJiaoDD_ElmoDrive_1012_6040_0_Controlword=ZhanJiaoDD_ElmoDrive_1012_6040_0_Controlword & $FF7F
+	TiePianR_ElmoDrive_1013_6040_0_Controlword=TiePianR_ElmoDrive_1013_6040_0_Controlword & $FF7F
+	TiePianDD_ElmoDrive_1014_6040_0_Controlword=TiePianDD_ElmoDrive_1014_6040_0_Controlword & $FF7F
+	LiuShuiXian_SW3_1015_6040_0_Controlword=LiuShuiXian_SW3_1015_6040_0_Controlword & $FF7F
+	JOG/ 1..23
+	CALL Timer.sec(2)
+	GlobalAlarmReset = 0
+}
+
+CLOSE 

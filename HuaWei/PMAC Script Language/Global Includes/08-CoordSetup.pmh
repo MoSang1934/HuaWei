@@ -18,6 +18,9 @@ undefine all
 #3->X
 #4->Y
 */
+&3
+#8->x
+#7->Y
 
 Coord[1].AltFeedRate = 0,0,0//10,10,10
 Coord[1].FeedTime=1

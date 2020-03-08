@@ -13,9 +13,9 @@ dwell 500
 x -840000 F 40000
 dwell 500
 x 390000 F 40000
-dwell 2000
+dwell 500
 x 0 y 0 F 40000
-dwell 2000
+dwell 500
 }
 
 close
@@ -32,22 +32,38 @@ F 40000
 while (1)
 {
 x 0 y 360000
-dwell 2000
+dwell 500
 x -2849840
-dwell 2000
+dwell 500
 xx 2994000 yy 0
-dwell 2000
+dwell 500
 yy 1803970
-dwell 2000
+dwell 500
 yy 0
-dwell 2000
+dwell 500
 y -332700
-dwell 2000
+dwell 500
 y 360000
-dwell 2000
+dwell 500
 x 0
-dwell 2000
+dwell 500
 xx 0
-dwell 2000
+dwell 500
+}
+close
+
+open prog 3
+abs
+linear
+ta 1000
+ts 500
+f 100000
+x 0 y 0
+while (1)
+{
+x 1129408 y-422000
+dwell 500
+x 0 y 0
+dwell 500
 }
 close
