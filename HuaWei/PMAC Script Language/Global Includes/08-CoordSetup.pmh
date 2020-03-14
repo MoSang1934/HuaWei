@@ -9,8 +9,6 @@ undefine all
 &2//ÌùÆ¬
 #5->X
 #6->Y
-#3->XX
-#4->YY
 
 
 /*
@@ -27,7 +25,3 @@ Coord[1].FeedTime=1
 Coord[2].FeedTime=1
 Coord[3].FeedTime=1
 
-Coord[1].SegMoveTime = 10,10,10
-Coord[1].HomeRequired=1
-Coord[2].HomeRequired=1
-Coord[3].HomeRequired=1

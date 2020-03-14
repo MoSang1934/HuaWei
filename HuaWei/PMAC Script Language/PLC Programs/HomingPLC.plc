@@ -4,40 +4,56 @@
 /***************************************************/
 open plc MotorHomePLC
 HomeMotorAll=0;
-HomeStatus(1),20=0;
+HomeStatus(1),23=0;
 HomeMotor(1),27=0;
 while(1)
 {
 	if(HomeMotor(1)==1)
 	{
+    Motor[1].JogSpeed=200
+	Motor[1].JogTa=100
 	call EcatMotorHome(1,HomeVel(1),HomePolarity(1))//ÒÆÔØX
 	}
 	if(HomeMotor(2)==1)
 	{
+	Motor[2].JogSpeed=250
+	Motor[2].JogTa=100
 	call EcatMotorHome(2,HomeVel(2),HomePolarity(2))//ÒÆÔØY
 	}
 	if(HomeMotor(3)==1)
 	{
+	  Motor[3].JogSpeed=200
+	Motor[3].JogTa=100
 	call EcatMotorHome(3,HomeVel(3),HomePolarity(3))//Õº½ºX
 	}
 	if(HomeMotor(4)==1)
 	{
+	  Motor[4].JogSpeed=200
+	  Motor[4].JogTa=100
 	call EcatMotorHome(4,HomeVel(4),HomePolarity(4))//Õº½ºY
 	}
 	if(HomeMotor(5)==1)
 	{
+	Motor[5].JogSpeed=250
+	Motor[5].JogTa=100
 	call EcatMotorHome(5,HomeVel(5),HomePolarity(5))//ÌùÆ¬X
 	}
 	if(HomeMotor(6)==1)
 	{
+	 Motor[6].JogSpeed=200
+	  Motor[6].JogTa=100
 	call EcatMotorHome(6,HomeVel(6),HomePolarity(6))//ÌùÆ¬Y
 	}
 	if(HomeMotor(7)==1)
 	{
+	Motor[7].JogSpeed=60
+	  Motor[7].JogTa=100
 	call EcatMotorHome(7,HomeVel(7),HomePolarity(7))//ÖÐ×ªÌ¨
 	}
 	if(HomeMotor(8)==1)
 	{
+	Motor[8].JogSpeed=60
+	  Motor[8].JogTa=100
 	call EcatMotorHome(8,HomeVel(8),HomePolarity(8))//´«ËÍ¼Ð×¦
 	}
 	if(HomeMotor(9)==1)
@@ -70,10 +86,14 @@ while(1)
 	}
 	if(HomeMotor(16)==1)
 	{
+	Motor[16].JogSpeed=1
+	Motor[16].JogTa=100
 	call ZhanJiaoPanHome(16,HomeVel(16),HomePolarity(16)) //Õº½ºÅÌ
 	}
 	if(HomeMotor(17)==1)
 	{
+	Motor[17].JogSpeed=2
+	Motor[17].JogTa=100
 	call JiaZhuaHome(17,HomeVel(17),HomePolarity(17))//¼Ð×¦µç»ú
 	}
 	if(HomeMotor(18)==1)
@@ -96,15 +116,21 @@ while(1)
 	}
 	if(HomeMotor(21)==1)  
 	{
+	Motor[21].JogSpeed=18
+	Motor[21].JogTa=100
 	call DSMotorHome(21,HomeVel(21),HomePolarity(21))
 	}
 
 	if(HomeMotor(22)==1)
 	{
+	Motor[22].JogSpeed=4
+	Motor[22].JogTa=100
 	call XiangJiZHome(22,HomeVel(22),HomePolarity(22))
 	}
 	if(HomeMotor(23)==1)
 	{
+   Motor[23].JogSpeed=4
+	Motor[23].JogTa=100
 	call XiangJiZHome(23,HomeVel(23),HomePolarity(23))
 	}
 

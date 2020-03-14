@@ -25,16 +25,10 @@ MotorStatus0(17)->Motor[17].Status[0]
 MotorStatus0(18)->Motor[18].Status[0]
 MotorStatus0(19)->Motor[19].Status[0]
 MotorStatus0(20)->Motor[20].Status[0]
-MotorStatus0(21)->Sys.Udata[1100]
-MotorStatus0(22)->Sys.Udata[1101]
-MotorStatus0(23)->Sys.Udata[1102]
-MotorStatus0(24)->Sys.Udata[1103]
-MotorStatus0(25)->Sys.Udata[1104]
-MotorStatus0(26)->Sys.Udata[1105]
-MotorStatus0(27)->Sys.Udata[1106]
-MotorStatus0(28)->Motor[28].Status[0]
-MotorStatus0(29)->Motor[29].Status[0]
-MotorStatus0(30)->Motor[30].Status[0]
+MotorStatus0(21)->Motor[21].Status[0]
+MotorStatus0(22)->Motor[22].Status[0]
+MotorStatus0(23)->Motor[23].Status[0]
+
 
 ptr CoordStatus0(21)->*;
 CoordStatus0(0)->Coord[0].Status[0]
@@ -238,12 +232,12 @@ HomeVel(5)=64
 HomeVel(6)=64
 HomeVel(7)=40
 HomeVel(8)=40
-HomeVel(9)=20
-HomeVel(10)=20
-HomeVel(11)=20
-HomeVel(12)=20
-HomeVel(13)=20
-HomeVel(14)=20
+HomeVel(9)=100
+HomeVel(10)=50
+HomeVel(11)=100
+HomeVel(12)=50
+HomeVel(13)=100
+HomeVel(14)=50
 HomeVel(15)=20
 HomeVel(16)=20
 HomeVel(17)=20
@@ -261,7 +255,7 @@ HomePolarity(2)=1
 HomePolarity(3)=0
 HomePolarity(4)=0
 HomePolarity(5)=1
-HomePolarity(6)=0
+HomePolarity(6)=1
 HomePolarity(7)=1
 HomePolarity(8)=0
 HomePolarity(9)=0

@@ -13,9 +13,9 @@ else
 if(Motor[index].AmpFault==1)
 {
 	JZDJ_RESET=1
-	call Timer.sec(1)
+	call Timer.sec(0.1)
 	JZDJ_RESET=0
-	call Timer.sec(0.5)
+	call Timer.sec(0.1)
 }
 	switch(HomeStatus(index))
 	{
